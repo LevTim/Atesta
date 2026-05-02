@@ -41,7 +41,7 @@ jobs:
     # 5. Автоматичний HTML-звіт (Генерація)
     - name: Run tests with pytest
       run: |
-        pytest --html=report.html --self-contained-html
+        python -m pytest --html=report.html --self-contained-html
 
     # 5. Автоматичний HTML-звіт (Збереження як артефакт)
     - name: Upload HTML report
